@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Eje</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="makoto_yuki" src="assets/makoto_yuki.png">
+            <video id="reloj" src="assets/videos/reloj.mp4" muted autoplay loop></video>
+            <a-asset-item id="lanza" src="assets/modelo3d/lanza.glb"></a-asset-item>
+            <a-asset-item id="jack_frost_smt" src="assets/modelo3d/jack_frost_smt.glb"></a-asset-item>
+            <a-asset-item id="mesa_escolar" src="assets/modelo3d/mesa_escolar.glb"></a-asset-item>
+            <a-asset-item id="curaduria" src="assets/modelo3d/curaduria.glb"></a-asset-item>
+        </a-assets>
+
+        <a-camera position="1.18 2 25"></a-camera>
+
+        <a-video src="#reloj" width="2" height="2" position="1 5 5"></a-video>
+
+        <a-gltf-model src="#mesa_escolar" 
+                      position="3.33517 0.025 0.65961" 
+                      scale="0.4 0.4 0.4" 
+                      rotation="0 151.894 0">
+        </a-gltf-model>
+
+        <a-gltf-model src="#jack_frost_smt" 
+                      position="-1.49055 0.08 6.03003" 
+                      scale="0.5 0.5 0.5" 
+                      rotation="0 54.453 0">
+        </a-gltf-model>
+
+        <a-gltf-model src="#curaduria" 
+                      position="0.87623 0 -12.31277" 
+                      scale="15 2 15" 
+                      rotation="0 0 0">
+        </a-gltf-model>
+
+        <a-image src="#makoto_yuki"  
+                 position="4.5 2 3" 
+                 scale="4 4 4" 
+                 rotation="0 90 0">
+        </a-image>
+
+        <a-entity environment="preset: japan; 
+                              dressingAmount: 1; 
+                              ground: flat; 
+                              groundColor: #445; 
+                              grid: cross" 
+                  scale="0.8 0.8 0.8" 
+                  position="-1.18 0 25">
+        </a-entity>
+    </a-scene>
+</body>
+</html>
