@@ -80,6 +80,7 @@
         init: function () {
             var myVideo = document.querySelector('#reloj'); // Selecciona el video
             var videoControls = document.querySelector('#videoControls2'); // Selecciona el botón
+            
 
             // Alterna entre reproducir y pausar el video
             this.el.addEventListener('click', function () {
@@ -89,6 +90,7 @@
                 } else {
                     myVideo.pause(); // Pausa el video
                     videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                    
                 }
             });
         }
@@ -116,6 +118,49 @@
     });
     </script>
     
+    
+<script>
+    // Componente personalizado para Play/Pause 4
+    AFRAME.registerComponent('play-pause4', {
+        init: function () {
+            var myVideo = document.querySelector('#persona1'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls3'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+    
+<script>
+    // Componente personalizado para Play/Pause 5
+    AFRAME.registerComponent('play-pause5', {
+        init: function () {
+            var myVideo = document.querySelector('#persona2'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls4'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
 
 </head>
 <body>
@@ -132,6 +177,8 @@
             <video id="persona_saul" src="assets/videos/persona_saul.mp4" muted autoplay loop></video>
             <video id="persona" src="assets/videos/persona.mp4" muted autoplay loop></video>
             <a-asset-item id="memento" src="assets/modelo3d/memento_mori.glb"></a-asset-item>
+            <video id="persona1" src="assets/videos/Persona_3intro.mp4" muted autoplay loop></video>
+            <video id="persona2" src="assets/videos/ThanatosOrpheus.mp4" muted autoplay loop></video>
         </a-assets>
 
         <!-- Cámara controlada -->
@@ -187,10 +234,17 @@
         <a-video src="#reloj" position="6.24965 2.24733 -5.68826" rotation="0 -40.88970600730633 0" width="4" height="4" color="#7BC8A4" scale="0.205 0.16294 1"></a-video>
         <a-plane position="6.24965 2.24733 -5.68826" rotation="0 -40.88970600730633 0" width="4" height="4" color="#7BC8A4" scale="0.205 0.16294 1"></a-plane>
 
+        <a-video src="#persona1" autoplay="true" loop="true" position="-10.81458 2.29453 -5.08159" rotation="-1.21639 90 -90" scale="5 5 5"></a-video>
+
+    </a-video>
+    <a-video src="#persona2" autoplay="true" loop="true"  position="10.67141 2.89415 -7.34521" rotation="-1.3390023672207338 -90.00021045914971 90.00021045914971"  scale="-5 -5 -5">
+        </a-video>
         <!--video controles-->
         <a-image id="videoControls" src="#play" position="-4.50851 2.05 -5.68092" rotation="0 37.343670213241666 0" width="4" height="4" scale="0.05 0.05 0.05" play-pause></a-image>
         <a-image id="videoControls2" src="#play" position="6.69597 2.04597 -5.29561" rotation="0 133.84007615358465 0" width="4" height="4" scale="0.05 0.05 -0.05" play-pause2></a-image>
         <a-image id="videoControls3" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
+        <a-image id="videoControls4" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
+        <a-image id="videoControls5" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
     </a-scene>
 </body>
 </html>
