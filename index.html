@@ -6,6 +6,7 @@
     <title>Prueba Combinada</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    
     <script>
         // Componente personalizado para Play/Pause
         AFRAME.registerComponent('play-pause', {
@@ -168,6 +169,7 @@
         <a-assets>
             <img id="play" src="assets/botonplaypersona.png">
             <img id="pausa" src="assets/botonpausapersona.png">
+            <img id="poncho1" src="assets/poncho_obra.jpeg">
             <video id="reloj" src="assets/videos/reloj.mp4" muted autoplay loop></video>
             <a-asset-item id="cartel" src="assets/modelo3d/cartel.glb"></a-asset-item>
             <a-asset-item id="tv" src="assets/modelo3d/TV.glb"></a-asset-item>
@@ -176,10 +178,16 @@
             <a-asset-item id="curaduria" src="assets/modelo3d/curaduria.glb"></a-asset-item>
             <video id="persona_saul" src="assets/videos/persona_saul.mp4" muted autoplay loop></video>
             <video id="persona" src="assets/videos/persona.mp4" muted autoplay loop></video>
+            <video id="afraid" src="assets/videos/afraid.mp4" muted autoplay loop></video>
+            <video id="siervo" src="assets/videos/siervo.mp4" muted autoplay loop></video>
+            <video id="coyote" src="assets/videos/coyete.mp4" muted autoplay loop></video>
+
             <a-asset-item id="memento" src="assets/modelo3d/memento_mori.glb"></a-asset-item>
             <video id="persona1" src="assets/videos/persona3.mp4" muted autoplay loop></video>
             <video id="persona2" src="assets/videos/thanatos.mp4" muted autoplay loop></video>
             <a-asset-item id="barbatos" src="assets/modelo3d/barbatos_statue.glb"></a-asset-item>
+           
+            <video id="celso1" src="assets/videos/obra_celso.mp4" muted autoplay loop></video>
         </a-assets>
 
         <!-- Cámara controlada -->
@@ -212,12 +220,18 @@
          Makoto Yuki es el protagonista de Persona 3 reload, un estudiante de preparatoria que tiene el poder de invocar diferentes poderes llamados personas. Makoto es una persona la cual al principio tiene una mentalidad nihilista y antisocial, además de alguien que se refugia en la música como un escape a su mundo interno que protege del exterior, características que resultan muy familiares y con las que me sentí muy identificado. A lo largo de su viaje pude aprender junto a él que lo más significativo es que lo importante no es centrarse en los desafíos ni en las emociones, sino en los vínculos con las personas. Cada vez que estoy con las personas que aprecio, su ejemplo me recuerda la importancia de valorar cada instante. Nunca sabemos cuándo podemos separarnos de quienes son importantes para nosotros. Por eso, intento ser una fuente de apoyo e inspiración, ayudando a quienes amo en los momentos difíciles, dejando una huella positiva en sus vidas, como él lo hizo en la mía." width="3" color="#FFFFFF" align="center" wrap-count="60" position="-5.192 2.62466 -15.32574" scale="1.875 1.875 1.875">
         </a-text>
 
+        <a-text value="-Que el viento te proteja viajero-
+        Me identifico con Venti por su habilidad de proyectar alegría y ligereza mientras enfrenta dolores profundos, una dualidad que también refleja mi personalidad. Compartimos un fuerte compromiso con la libertad, no solo de acción, sino de ser auténticos y permitir que otros vivan en su verdad. Transformo el dolor en creatividad y fortaleza, honrando a quienes han marcado mi vida al convertir su recuerdo en inspiración para ser mejor. Como él, celebro la alegría como resistencia, buscando inspirar a otros a encontrar su libertad y convertir la adversidad en algo hermoso." width="3" color="#FFFFFF" align="center" wrap-count="60" position="-10.92188 2.62466 -34.91346" scale="2.20625 2.20625 2.20625" rotation="0 90 0">
+       </a-text>
+
         <!--a-image src="#makoto_yuki"  
                  position="4.5 2 3" 
                  scale="4 4 4" 
                  rotation="0 90 0">
         </a-image-->
 
+        <a-entity rotation="-90 0 0" class="environmentGround environment" visible="true" scale="2 2 25" shadow="cast: true; receive: true" position="0 0 -46.90823"></a-entity>
+        
         <a-entity environment="preset: japan; 
                               dressingAmount: 1; 
                               ground: flat; 
@@ -226,27 +240,40 @@
                   scale="0.8 0.8 0.8" 
                   position="-1.18 0 25">
         </a-entity>
-
+    
         <a-gltf-model src="#barbatos" position="-9.19635 0.05522 -39.01511" scale="0.95652 0.95652 0.95652" rotation="0 41.1102947584317 0" gltf-model="assets/modelo3d/barbatos_statue.glb"></a-gltf-model>
-        
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-        
+                
         <a-video src="#persona" autoplay="true" loop="true" position="-5.067 2.25518 -5.36059" scale="0.795 0.646 4" rotation="0.134 38.518 -0.331">
         </a-video>
         <a-video src="#persona_saul" autoplay="true" loop="true" position="5.5 2.20 -14.80472" rotation="" width="4" height="4" scale="0.49442 0.7603 1">
         </a-video>
         <a-video src="#reloj" position="6.24965 2.24733 -5.68826" rotation="0 -40.88970600730633 0" width="4" height="4" color="#7BC8A4" scale="0.205 0.16294 1"></a-video>
-        
         <a-video src="#persona1" autoplay="true" loop="true"position="-10.85803 2.82963 -4.87035" rotation="0 90 0" width="4" height="4" scale="1.01564 0.80755 4.95434"></a-video>
-
-    <a-video src="#persona2" autoplay="true" loop="true" position="11.013 2.633 -4.87" rotation="0 90 0" width="4" height="4" scale="1.641 1.038 5.548"
+       <a-video src="#persona2" autoplay="true" loop="true" position="11.013 2.633 -4.87" rotation="0 90 0" width="4" height="4" scale="1.641 1.038 5.548"
         </a-video>
-            <!--video controles-->
-            <a-image id="videoControls" src="#play" position="-4.50851 2.05 -5.68092" rotation="0 37.343670213241666 0" width="4" height="4" scale="0.05 0.05 0.05" play-pause></a-image>
+
+        <a-video src="#celso1" autoplay="true" loop="true"height="20" width="20" position="6.07579 2.55016 -40.92293" scale="0.14786 0.23175 0.0923"></a-video>
+
+        <a-plane position="31.56222 2.74534 -47.16636" rotation="-1.6254812647861454 -90.23168540838256 179.5592434160487" width="4" height="4" color="#7BC8A4"></a-plane>
+        <a-plane position="36.27377 -0.28344 -6.44876" rotation="0 -90.00021045914971 179.84056569345793" width="4" height="4" color="#7BC8A4" scale="0.11767 1 1"></a-plane>
+        
+        <a-plane position="27.59624 0.12385 3.80724" rotation="0 -180 0" width="4" height="4" co" scale="1.06362 1 1"></a-plane>
+
+        <a-video src="#afraid" autoplay="true" loop="true" position="27.59624 0.12385 3.80724" rotation="0 -180 0" width="4" height="4" co"="" scale="1.06362 1 1"
+    </a-video>
+    <a-video src="#" autoplay="true" loop="true" position="21.68991 0.00298 2.31559" rotation="0 90 0" width="4" height="4" co"="" scale="0.34401 0.98579 0.84656" material=""></a-video>
+    <a-video src="#siervo" autoplay="true" loop="true" position="5.5 0.12385 1.5" rotation="0 -90 0" width="4" height="4" scale="0.3 0.9 0.8"
+</a-video>
+<a-video src="#coyote" autoplay="true" loop="true" position="27.59624 0.12385 1" rotation="0 -180 0" width="4" height="4" co"="" scale="1.06362 1 1"
+    </a-video>
+    <a-plane position="21.68991 0.00298 2.31559" rotation="0 90 0" width="4" height="4" scale="0.34401 0.98579 0.84656" material=""></a-plane>
+
+        <!--video controles-->
+            <!--a-image id="videoControls" src="#play" position="4.50851 2.05 -5.68092" rotation="0 37.343670213241666 0" width="4" height="4" scale="0.05 0.05 0.05" play-pause></a-image>
             <a-image id="videoControls2" src="#play" position="6.69597 2.04597 -5.29561" rotation="0 133.84007615358465 0" width="4" height="4" scale="0.05 0.05 -0.05" play-pause2></a-image>
             <a-image id="videoControls3" src="#play" position="7 2.20 -14.80472" rotation="0 0 0" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
             <a-image id="videoControls4" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
-        <a-image id="videoControls5" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
+        <a-image id="videoControls5" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image-->
     </a-scene>
 </body>
 </html>
