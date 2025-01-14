@@ -18,10 +18,10 @@
                 this.el.addEventListener('click', function () {
                     if (myVideo.paused) {
                         myVideo.play(); // Reproduce el video
-                        videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                        videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
                     } else {
                         myVideo.pause(); // Pausa el video
-                        videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                        videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
                     }
                 });
             }
@@ -80,17 +80,17 @@
     AFRAME.registerComponent('play-pause2', {
         init: function () {
             var myVideo = document.querySelector('#reloj'); // Selecciona el video
-            var videoControls = document.querySelector('#videoControls2'); // Selecciona el botón
+            var videoControls = document.querySelector('#videoControls1'); // Selecciona el botón
             
 
             // Alterna entre reproducir y pausar el video
             this.el.addEventListener('click', function () {
                 if (myVideo.paused) {
                     myVideo.play(); // Reproduce el video
-                    videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
                 } else {
                     myVideo.pause(); // Pausa el video
-                    videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
                     
                 }
             });
@@ -109,10 +109,10 @@
             this.el.addEventListener('click', function () {
                 if (myVideo.paused) {
                     myVideo.play(); // Reproduce el video
-                    videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
                 } else {
                     myVideo.pause(); // Pausa el video
-                    videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
                 }
             });
         }
@@ -131,10 +131,10 @@
             this.el.addEventListener('click', function () {
                 if (myVideo.paused) {
                     myVideo.play(); // Reproduce el video
-                    videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
                 } else {
                     myVideo.pause(); // Pausa el video
-                    videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
                 }
             });
         }
@@ -153,24 +153,154 @@
             this.el.addEventListener('click', function () {
                 if (myVideo.paused) {
                     myVideo.play(); // Reproduce el video
-                    videoControls.setAttribute('src', '#pausa'); // Cambia a la imagen de pausa
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
                 } else {
                     myVideo.pause(); // Pausa el video
-                    videoControls.setAttribute('src', '#play'); // Cambia a la imagen de play
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
                 }
             });
         }
     });
     </script>
 
+<script>
+    // Componente personalizado para Play/Pause 6
+    AFRAME.registerComponent('play-pause6', {
+        init: function () {
+            var myVideo = document.querySelector('#venti'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls5'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+<script>
+    // Componente personalizado para Play/Pause 7
+    AFRAME.registerComponent('play-pause7', {
+        init: function () {
+            var myVideo = document.querySelector('#celso1'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls6'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+<script>
+    // Componente personalizado para Play/Pause 8
+    AFRAME.registerComponent('play-pause8', {
+        init: function () {
+            var myVideo = document.querySelector('#afraid'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls7'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+<script>
+    // Componente personalizado para Play/Pause 9
+    AFRAME.registerComponent('play-pause9', {
+        init: function () {
+            var myVideo = document.querySelector('#poncho1'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls8'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+<script>
+    // Componente personalizado para Play/Pause 10
+    AFRAME.registerComponent('play-pause10', {
+        init: function () {
+            var myVideo = document.querySelector('#buen_hombre'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls9'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+<script>
+    // Componente personalizado para Play/Pause 11
+    AFRAME.registerComponent('play-pause11', {
+        init: function () {
+            var myVideo = document.querySelector('#snake'); // Selecciona el video
+            var videoControls = document.querySelector('#videoControls10'); // Selecciona el botón
+
+            // Alterna entre reproducir y pausar el video
+            this.el.addEventListener('click', function () {
+                if (myVideo.paused) {
+                    myVideo.play(); // Reproduce el video
+                    videoControls.setAttribute('src', '#pausa1'); // Cambia a la imagen de pausa
+                } else {
+                    myVideo.pause(); // Pausa el video
+                    videoControls.setAttribute('src', '#play1'); // Cambia a la imagen de play
+                }
+            });
+        }
+    });
+    </script>
+
+
 </head>
 <body>
     <a-scene>
         <a-assets>
-            <img id="play" src="assets/botonplaypersona.png">
-            <img id="pausa" src="assets/botonpausapersona.png">
-            <img id="poncho1" src="assets/poncho_obra.jpeg">
-            <video id="reloj" src="assets/videos/reloj.mp4" muted autoplay loop></video>
+            <img id="play1" src="assets/botonplaypersona.png">
+            <img id="pausa1" src="assets/botonpausapersona.png">
+            <img id="lalo" src="assets/obra_lalo.jpeg">
+            <img id="cv" src="assets/celso_venti.jpeg">
+            <img id="final" src="assets/obra_final.jpeg">
+           
+
             <a-asset-item id="cartel" src="assets/modelo3d/cartel.glb"></a-asset-item>
             <a-asset-item id="planta1" src="assets/modelo3d/genshin_planta.glb"></a-asset-item>
             <a-asset-item id="tv" src="assets/modelo3d/TV.glb"></a-asset-item>
@@ -179,19 +309,34 @@
             <a-asset-item id="curaduria" src="assets/modelo3d/curaduria.glb"></a-asset-item>
             <a-asset-item id="spirit" src="assets/modelo3d/spirit.glb"></a-asset-item>
             <a-asset-item id="slime" src="assets/modelo3d/anemo_slime.glb"></a-asset-item>
-            <a-asset-item id="arbol" src="assets/modelo3d/arbol.glb"></a-asset-item>
-            <video id="persona_saul" src="assets/videos/persona_saul.mp4" muted autoplay loop></video>
-            <video id="persona" src="assets/videos/persona.mp4" muted autoplay loop></video>
-            <video id="afraid" src="assets/videos/afraid.mp4" muted autoplay loop></video>
+            <a-asset-item id="arbol" src="assets/modelo3d/arbol.glb"></a-asset-item>     
+            <a-asset-item id="memento" src="assets/modelo3d/memento_mori.glb"></a-asset-item>   
+            <a-asset-item id="barbatos" src="assets/modelo3d/barbatos_statue.glb"><a-asset-item>
+            <a-asset-item id="barril" src="assets/modelo3d/barril_viejo.glb"><a-asset-item>
+            <a-asset-item id="botella" src="assets/modelo3d/botella_de_vino_vieja.glb"><a-asset-item>
+            <a-asset-item id="lavabo" src="assets/modelo3d/lavabo.glb"><a-asset-item>
+            <a-asset-item id="cassete" src="assets/modelo3d/tape_recorder_with_cassettes.glb"><a-asset-item>
+            <a-asset-item id="espejo" src="assets/modelo3d/espejo_luna.glb"><a-asset-item>
+            
+            
+            <video id="pantalla1" src="assets/videos/mariposa.mp4" muteed autoplay loop></video>
+            <video id="pantalla2" src="assets/videos/pantalla2.mp4" muted autoplay loop></video>
+            <video id="pantalla3" src="assets/videos/pantalla3.mp4" muted autoplay loop></video>
+            <video id="celso1" src="assets/videos/obra_celso.mp4" loop></video>
+            <video id="persona_saul" src="assets/videos/persona_saul.mp4" loop></video>
+            <video id="snake" src="assets/videos/venom_snake.mp4" loop></video>
+            <video id="afraid" src="assets/videos/afraid.mp4" loop></video>
             <video id="siervo" src="assets/videos/siervo.mp4" muted autoplay loop></video>
             <video id="coyote" src="assets/videos/coyete.mp4" muted autoplay loop></video>
+            <video id="venti" src="assets/videos/video_venti.mp4" loop></video>
+            <video id="poncho1" src="assets/videos/obra_poncho.mp4" muted loop></video>
+            <video id="persona1" src="assets/videos/persona3.mp4" loop></video>
+            <video id="persona2" src="assets/videos/thanatos.mp4" loop></video>
+            <video id="persona" src="assets/videos/persona.mp4" loop></video>
+            <video id="reloj" src="assets/videos/reloj.mp4" loop></video>
+            <video id="buen_hombre" src="assets/videos/buen_hombre.mp4" muted loop></video>
+            <video id="carta" src="assets/videos/carta.mp4" muted autoplay loop></video>
 
-            <a-asset-item id="memento" src="assets/modelo3d/memento_mori.glb"></a-asset-item>
-            <video id="persona1" src="assets/videos/persona3.mp4" muted autoplay loop></video>
-            <video id="persona2" src="assets/videos/thanatos.mp4" muted autoplay loop></video>
-            <a-asset-item id="barbatos" src="assets/modelo3d/barbatos_statue.glb"></a-asset-item>
-           
-            <video id="celso1" src="assets/videos/obra_celso.mp4" muted autoplay loop></video>
         </a-assets>
 
         <!-- Cámara controlada -->
@@ -222,29 +367,45 @@
         <a-gltf-model src="#planta1" position="-9.22805 0.09092 -36.9295" scale="0.81725 0.81725 0.81725" rotation="0 142.165 0" gltf-model="assets/modelo3d/genshin_planta.glb"></a-gltf-model>        <a-gltf-model src="#planta1" position="-8.26875 0.06292 -32.56715" scale="0.82949 0.82949 0.82949" rotation="0 142.165 0" gltf-model="assets/modelo3d/genshin_planta.glb"></a-gltf-model>        
         <a-gltf-model src="#planta1" position="3.63887 0.09092 -39.09835" scale="0.86677 0.86677 0.86677" rotation="0 142.165 0" gltf-model="assets/modelo3d/genshin_planta.glb"></a-gltf-model>        
         <a-gltf-model src="#planta1" position="3.63887 0.09092 -39.09835" scale="0.86677 0.86677 0.86677" rotation="0 142.165 0" gltf-model="assets/modelo3d/genshin_planta.glb"></a-gltf-model>
-        <a-gltf-model src="#spirit" position="-10.89852 3.6769 -34.71734" scale="0.1863 0.1863 0.1863" rotation="0 82.32314896219181 0" gltf-model="assets/modelo3d/spirit.glb"></a-gltf-model>
+        <a-gltf-model src="#spirit" position="-10.89852 3.6769 -32.13867" scale="0.1863 0.1863 0.1863" rotation="0 82.32314896219181 0" gltf-model="assets/modelo3d/spirit.glb"></a-gltf-model>
         <a-gltf-model src="#slime" position="8.91492 -0.1209 -40.16377" scale="0.667 0.667 0.667" rotation="0 -49.8433174718157 0" gltf-model="assets/modelo3d/anemo_slime.glb"></a-gltf-model>
         <a-gltf-model src="#arbol" position="6.52892 -0.121 -29.20771" scale="0.002 0.0021 0.0021" rotation="0 -81.13598041068074 0" gltf-model="assets/modelo3d/arbol.glb"></a-gltf-model>  
         <a-gltf-model src="#arbol" position="-8.7568 -0.121 -27.15" scale="0.002 0.002 0.002" rotation="0 -35.431137093094975 0" gltf-model="assets/modelo3d/arbol.glb"></a-gltf-model> 
-        <a-gltf-model src="#planta1" position="6.65717 0.34576 -5.964" scale="0.567 0.567 0.567" rotation="0 142.165 0"></a-gltf-model>
         <a-gltf-model src="#planta1" position="3.63887 0.09092 -39.09835" scale="0.86677 0.86677 0.86677" rotation="0 142.165 0" gltf-model="assets/modelo3d/genshin_planta.glb"></a-gltf-model>  
         <a-gltf-model src="#planta1" position="-7.22868 0.09092 -39.50383" scale="0.6775 0.6775 0.6775" rotation="0 142.165 0" gltf-model="assets/modelo3d/genshin_planta.glb"></a-gltf-model>
-        
-          <a-text value="-He pensado que puedo empezar a vivir-
-         Makoto Yuki es el protagonista de Persona 3 reload, un estudiante de preparatoria que tiene el poder de invocar diferentes poderes llamados personas. Makoto es una persona la cual al principio tiene una mentalidad nihilista y antisocial, además de alguien que se refugia en la música como un escape a su mundo interno que protege del exterior, características que resultan muy familiares y con las que me sentí muy identificado. A lo largo de su viaje pude aprender junto a él que lo más significativo es que lo importante no es centrarse en los desafíos ni en las emociones, sino en los vínculos con las personas. Cada vez que estoy con las personas que aprecio, su ejemplo me recuerda la importancia de valorar cada instante. Nunca sabemos cuándo podemos separarnos de quienes son importantes para nosotros. Por eso, intento ser una fuente de apoyo e inspiración, ayudando a quienes amo en los momentos difíciles, dejando una huella positiva en sus vidas, como él lo hizo en la mía." width="3" color="#FFFFFF" align="center" wrap-count="60" position="-5.192 2.62466 -15.32574" scale="1.875 1.875 1.875">
-        </a-text>
-
-        <a-text value="-Que el viento te proteja viajero-
-        Me identifico con Venti por su habilidad de proyectar alegría y ligereza mientras enfrenta dolores profundos, una dualidad que también refleja mi personalidad. Compartimos un fuerte compromiso con la libertad, no solo de acción, sino de ser auténticos y permitir que otros vivan en su verdad. Transformo el dolor en creatividad y fortaleza, siempre honrando a quienes han marcado mi vida al convertir su recuerdo en inspiración para ser mejor. Como él, celebro la alegría como resistencia, buscando inspirar a otros a encontrar su libertad y convertir la adversidad en algo hermoso." width="3" color="#FFFFFF" align="center" wrap-count="60" position="-10.92188 2.62466 -34.91346" scale="2.20625 2.20625 2.20625" rotation="0 90 0">
-       </a-text>
-
-        <!--a-image src="#makoto_yuki"  
-                 position="4.5 2 3" 
-                 scale="4 4 4" 
-                 rotation="0 90 0">
-        </a-image-->
+        <a-gltf-model src="#barril" position="31.60112 0.75793 -41.97684" scale="0.67792 0.67792 0.67792" rotation="0 142.165 0" gltf-model="assets/modelo3d/barril_viejo.glb"></a-gltf-model>
+        <a-gltf-model src="#barril" position="30.94919 0.75793 -41.13743" scale="0.67792 0.67792 0.67792" rotation="0 142.165 0" gltf-model="assets/modelo3d/barril_viejo.glb"></a-gltf-model>
+        <a-gltf-model src="#barril" position="31.29642 2.09946 -41.58452" scale="0.67792 0.67792 0.67792" rotation="0 142.165 0" gltf-model="assets/modelo3d/barril_viejo.glb"></a-gltf-model>
+        <<a-gltf-model src="#botella" position="17.05969 1.65566 -41.37803" scale="1.07239 1.07239 1.07239" rotation="0 2.5141388050340523 90.00021045914971" gltf-model="assets/modelo3d/botella_de_vino_vieja.glb"></a-gltf-model>
+        <a-gltf-model src="#botella" position="15.38174 0.33007 -41.91042" scale="1.07239 1.07239 1.07239" rotation="0 142.165 0" gltf-model="assets/modelo3d/botella_de_vino_vieja.glb"></a-gltf-model>
+        <a-gltf-model src="#botella" position="15.85872 -1.24469 -42.20045" scale="1.07239 1.07239 1.07239" rotation="0 31.970472010504803 -90.00021045914971" gltf-model="assets/modelo3d/botella_de_vino_vieja.glb"></a-gltf-model>
+        <a-gltf-model src="#lavabo" position="-30.28323 0.14711 -51.82259" scale="1.26727 1.26727 1.26727" rotation="0 90 0" gltf-model="assets/modelo3d/lavabo.glb"></a-gltf-model>
+        <a-gltf-model src="#cassete" position="-30.58213 1.6727 -52.21082" scale="0.60287 0.60287 0.60287" rotation="0 45.53868555699783 0" gltf-model="assets/modelo3d/tape_recorder_with_cassettes.glb"></a-gltf-model>
+        <a-gltf-model src="#espejo" position="-30.73086 3.13158 -51.823" scale="5.62237 2.19402 2.19402" rotation="0 90 0" gltf-model="assets/modelo3d/espejo_luna.glb"></a-gltf-model>
+        <a-image src="#cv" height="20" width="20" position="-4.40913 2.5 -40.940" scale="0.164 0.234 0.17765" rotation="0 0 0"></a-image>        
+        <a-image src="#final" height="20" width="20" position="-20.43288 2.35667 -77.630" scale="0.39413 0.22403 2.55564"></a-image>        
 
         
+        
+        <a-image src="#lalo" height="20" width="20" rotation="0 -90 0" scale="0.28244 0.18841 0.83242" position="32.24832 2.62835 -51.88192"></a-image>        
+        
+
+    <a-entity text="align: center; color: ffffff; font: assets/fonts/custom-msdf.json; fontImage: assets/fonts/custom.png; negate: false; value: -He pensado que puedo empezar a vivir-
+    Makoto Yuki es el protagonista de Persona 3 reload, un estudiante de preparatoria que tiene el poder de invocar diferentes poderes llamados personas. Makoto es una persona la cual al principio tiene una mentalidad nihilista y antisocial, además de alguien que se refugia en la música como un escape a su mundo interno que protege del exterior, características que resultan muy familiares y con las que me sentí muy identificado. A lo largo de su viaje pude aprender junto a él que lo más significativo es que lo importante no es centrarse en los desafíos ni en las emociones, sino en los vínculos con las personas. Cada vez que estoy con las personas que aprecio, su ejemplo me recuerda la importancia de valorar cada instante. Nunca sabemos cuándo podemos separarnos de quienes son importantes para nosotros. Por eso, intento ser una fuente de apoyo e inspiración, ayudando a quienes amo en los momentos difíciles, dejando una huella positiva en sus vidas, como él lo hizo en la mía." 4.24424="" 2.12213"="" position="-5.21493 2.4888 -15.3768" rotation="" scale="4.14829 4.14829 4.14829">
+</a-entity>
+
+    <a-entity text="align: center; color: black; font: assets/fonts/custom-msdf.json; fontImage: assets/fonts/custom.png; negate: false; value: -Que el viento te proteja viajero-
+    Me identifico con Venti por su habilidad de proyectar alegría y ligereza mientras enfrenta dolores profundos, una dualidad que también refleja mi personalidad. Compartimos un fuerte compromiso con la libertad, no solo de acción, sino de ser auténticos y permitir que otros vivan en su verdad. Transformo el dolor en creatividad y fortaleza, siempre honrando a quienes han marcado mi vida al convertir su recuerdo en inspiración para ser mejor. Como él, celebro la alegría como resistencia, buscando inspirar a otros a encontrar su libertad y convertir la adversidad en algo hermoso." 4.24424="" 2.12213"="" position="-10.73153 2.36506 -34.94005" rotation="0 90 0" scale="5.62723 5.62723 5.62723">
+</a-entity>
+
+       <a-entity text="align: center; color: ffffff; font: assets/fonts/custom-msdf.json; fontImage: assets/fonts/custom.png; negate: false; value: Yo me identifico con este personaje por la madurez que empieza a tener al decidir que quiere cambiar, esto también ha pasado conmigo a lo largo de mi vida debido a las acciones que he echo y las consecuencias que me han traído ya sean malas o buenas y me han ayudado a madurar así como lo hizo Arthur. 
+       También me identifico con ese cambió que sufre Arthur al recibir esa mala noticia, ya que yo también al hacer malas acciones afectaron mi vida y la de terceros y no me enorgullece pero a la ve cada que puedo hago actos buenos y ayudo a los demás sin importar si los conozco o no y eso me ayuda a cambiar mi identidad con esas personas por qué apesar que yo me siento una persona mala, las personas dicen lo contrario y me hacen cambiar de pensar, eso también me hace identificarme con una de las escenas que están a un lado de mi obra la cual es cuando le dicen lo mismo al protagonista y lo hacen ver que a ojos de los demás el es bueno." scale="4.24424 4.24424 2.12213" position="15.52146 2.72232 -44.89394" rotation="0 90 0">
+   </a-entity>
+        
+   <a-entity text="align: center; color: #ffffff; font: assets/fonts/custom-msdf.json; fontImage: assets/fonts/custom.png; negate: false; value: En la construcción de mi obra, el espejo se convierte en algo más que un simple objeto: es el escenario donde mi identidad se encuentra con su reflejo.utilizo a Venom Snake como un medio para explorar las múltiples capas y retropectivas de mi propio ser, mis conflictos internos y las expectativas sobre mí.
+   La escena del espejo en el juego resuena profundamente en mí porque encapsula un sentimiento en mi caso, ha sido una constante: la lucha entre lo que soy y lo que se espera de mí. Venom Snake, al descubrir que no es Big Boss, se enfrenta a la realidad de ser  un sustituto, alguien definido por el peso de los ideales y las exigencias externas. No se trata de Venom Snake, sino de mí, viéndome a través del prisma de un personaje que me ha ayudado a entender quién soy y quién quiero ser. Es un recordatorio de que, aunque me inspire en él, la historia que cuento es completamente mía" scale="4.73307 4.73307 2.36653" position="-15.4749 2.58432 -59.74344" rotation="0 -90 0">
+</a-entity>
+
         <a-entity environment="preset: japan; 
                               dressingAmount: 1; 
                               ground: flat; 
@@ -253,40 +414,45 @@
                   scale="0.8 0.8 0.8" 
                   position="-1.18 0 25">
         </a-entity>
-    
+
+        <a-plane height="20" width="20" position="-14.35842 2.3574 -70.49318" scale="0.08536 0.06133 0.10517" material="" rotation="0 -90 0"></a-plane>
+
         <a-gltf-model src="#barbatos" position="-9.19635 0.05522 -39.01511" scale="0.95652 0.95652 0.95652" rotation="0 41.1102947584317 0" gltf-model="assets/modelo3d/barbatos_statue.glb"></a-gltf-model>
-                
-        <a-video src="#persona" autoplay="true" loop="true" position="-5.067 2.25518 -5.36059" scale="0.795 0.646 4" rotation="0.134 38.518 -0.331">
-        </a-video>
-        <a-video src="#persona_saul" autoplay="true" loop="true" position="5.5 2.20 -14.80472" rotation="" width="4" height="4" scale="0.49442 0.7603 1">
-        </a-video>
-        <a-video src="#reloj" position="6.24965 2.24733 -5.68826" rotation="0 -40.88970600730633 0" width="4" height="4" color="#7BC8A4" scale="0.205 0.16294 1"></a-video>
-        <a-video src="#persona1" autoplay="true" loop="true"position="-10.85803 2.82963 -4.87035" rotation="0 90 0" width="4" height="4" scale="1.01564 0.80755 4.95434"></a-video>
-       <a-video src="#persona2" autoplay="true" loop="true" position="11.013 2.633 -4.87" rotation="0 90 0" width="4" height="4" scale="1.641 1.038 5.548"
-        </a-video>
-
-        <a-video src="#celso1" visible="true" autoplay="true" loop="true" position="21.950 -0.1 -0.7" rotation="0 -90 0" width="4" height="4" scale="0.12 1 1.04582"></a-video>
-
-        <a-plane position="31.56222 2.74534 -47.16636" rotation="-1.6254812647861454 -90.23168540838256 179.5592434160487" width="4" height="4" color="#7BC8A4"></a-plane>
-        <a-plane position="36.27377 -0.28344 -6.44876" rotation="0 -90.00021045914971 179.84056569345793" width="4" height="4" color="#7BC8A4" scale="0.11767 1 1"></a-plane>
+        <a-circle color="#CCC" radius="20" position="-4.50552 2.30183 -5.68659" scale="0.003 0.003 0.003" rotation="0 50.724526560726915 0" play-pause=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="6.65688 2.29634 -5.22583" scale="0.003 0.003 0.003" play-pause2="" rotation="0 -31.041134466802607 0"></a-circle>
+        <a-circle color="#CCC" radius="20" position="7.371 2.623 -15.223" scale="0.011 0.011 0.011" play-pause3=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="-10.83832 2.623 -2.474" scale="0.011 0.011 0.011" rotation="0 90 0" play-pause4=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="10.92393 2.623 -2.47427" scale="0.011 0.011 0.011" rotation="0 -90 0" play-pause5=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="10.924 2.623 -31.63284" scale="0.011 0.011 0.011" rotation="0 -90 0" play-pause6=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="8.51212 2.623 -40.92765" scale="0.011 0.011 0.011" rotation="" play-pause7=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="32.14832 2.63 -48.19614" scale="0.011 0.011 0.011" rotation="0 -90 0" play-pause8=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="-30.74104 3.10848 -49.13001" scale="0.011 0.011 0.011" rotation="0 90 0" play-pause9=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="21.39873 2.623 -40.47775" scale="0.011 0.011 0.011" rotation="0 180 0" play-pause10=""></a-circle>
+        <a-circle color="#CCC" radius="20" position="-22.9986 2.623 -65.03985" scale="0.011 0.011 0.011" rotation="" play-pause11=""></a-circle>
         
-        <a-plane position="27.59624 0.12385 3.80724" rotation="0 -180 0" width="4" height="4" co" scale="1.06362 1 1"></a-plane>
+        <!--video-->
+<a-video src="#pantalla1" autoplay="true" loop="true" height="20" width="20" position="2.567 2.593 -17.606" scale="0.11507 0.0645 0.0645" rotation="0 -90 0"></a-video>
+<a-video src="#pantalla2" autoplay="true" loop="true" height="20" width="20" position="-8.90638 2.758 -54.76921" scale="0.11507 0.0645 0.0645" rotation="0 0 0"></a-video>
+<a-video src="#pantalla3" autoplay="true" loop="true" height="20" width="20" position="-0.63721 2.758 -45.15374" scale="0.11507 0.0645 0.0645" rotation="0 90 0"></a-video>
 
-        <a-video src="#afraid" autoplay="true" loop="true" position="27.59624 0.12385 3.80724" rotation="0 -180 0" width="4" height="4" co"="" scale="1.06362 1 1"
-    </a-video>
-    <a-video src="#" autoplay="true" loop="true" position="21.68991 0.00298 2.31559" rotation="0 90 0" width="4" height="4" co"="" scale="0.34401 0.98579 0.84656" material=""></a-video>
-    <a-video src="#siervo" autoplay="true" loop="true" position="5.5 0.12385 1.5" rotation="0 -90 0" width="4" height="4" scale="0.3 0.9 0.8"
+
+<a-video src="#persona" loop="true" position="-5.067 2.255 -5.361" scale="0.795 0.646 4" rotation="0.134 38.518 -0.331"></a-video>
+<a-video src="#persona_saul" loop="true" position="5.5 2.5 -15.4" rotation="" width="4" height="4" scale="0.8 1.1 1"></a-video>
+<a-video src="#reloj" position="6.24965 2.24733 -5.68826" rotation="0 -40.88970600730633 0" width="4" height="4" color="#7BC8A4" scale="0.205 0.16294 1">|</a-video>
+<a-video src="#persona1" loop="true"position="-10.85803 2.82963 -4.87035" rotation="0 90 0" width="4" height="4" scale="1 0.6 5">
 </a-video>
-<a-video src="#coyote" autoplay="true" loop="true" position="-0.5 0.12385 17.4" rotation="0 -180 0" width="4" height="4" co"="" scale="1.06362 1 1"
-    </a-video>
-    <a-plane position="21.68991 0.00298 2.31559" rotation="0 90 0" width="4" height="4" scale="0.34401 0.98579 0.84656" material=""></a-plane>
-    <a-plane position="23.19028 -0.51353 -15.83896" rotation="0.01776169164905552 0 0.03552338329811104" width="4" height="4" scale="0.344 0.986 0.847" material=""></a-plane>
-        <!--video controles-->
-            <!--a-image id="videoControls" src="#play" position="4.50851 2.05 -5.68092" rotation="0 37.343670213241666 0" width="4" height="4" scale="0.05 0.05 0.05" play-pause></a-image>
-            <a-image id="videoControls2" src="#play" position="6.69597 2.04597 -5.29561" rotation="0 133.84007615358465 0" width="4" height="4" scale="0.05 0.05 -0.05" play-pause2></a-image>
-            <a-image id="videoControls3" src="#play" position="7 2.20 -14.80472" rotation="0 0 0" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
-            <a-image id="videoControls4" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image>
-        <a-image id="videoControls5" src="#play" position="7 2.20 -14.80472" rotation="" width="4" height="4" scale="0.15 0.15 0.15" play-pause3></a-image-->
+<a-video src="#persona2" autoplay="true" loop="true" position="11.013 2.633 -4.87" rotation="0 -90 0" width="4" height="4" scale="1 0.6 5">
+</a-video>
+<a-video src="#celso1" visible="true" loop="true" height="20" width="20" position="6.41209 2.5 -40.940" scale="0.164 0.234 0.17765" rotation="0 0 0"></a-video>
+<a-video src="#venti" loop="true" position="11 2.5 -34" rotation="0 -90 0" width="4" height="4" scale="0.9 0.646 4"></a-video>
+<a-video src="#afraid" loop="true" height="20" width="20" rotation="0 -90 0" scale="0.24001 0.1601 0.70736" position="32.24832 2.62835 -45.38595"></a-video>
+<a-video src="#siervo" loop="true" height="20" width="20" position="10.791 2.758 -51.03252" scale="0.11507 0.0645 0.0645" rotation="0 180 0"></a-video>
+<a-video src="#coyote" loop="true"  height="20" width="20" position="10.79116 2.75834 -54.78427" scale="0.11507 0.0645 0.0645"></a-video>
+<a-video src="#poncho1" height="20" width="20" position="-30.71407 3.12445 -51.79577" rotation="0 90 0" scale="0.22019 0.13006 1"></a-video>
+<a-video src="#buen_hombre"height="20" width="20" position="23.78082 2.758 -40.51553" scale="0.178 0.11691 0.178" rotation="0 -180 0"></a-video>
+<a-video src="#snake" height="20" width="20" position="-26.27661 2.3574 -64.531" scale="0.25407 0.12737 0.10517" rotation="0 180 0"></a-video>
+<a-video src="#carta" height="20" width="20" position="-14.35842 2.3574 -70.49318" scale="0.08536 0.06133 0.10517" rotation="0 -90 0"></a-video>
+
     </a-scene>
 </body>
 </html>
